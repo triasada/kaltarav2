@@ -1,0 +1,70 @@
+body{
+    font-family: "Titillium Web", "sans-serif";
+    font-size: 16px;
+}
+
+/* header top */
+#top-header, #main-header{
+    background-color: #081f4d; 
+    color: #fff;
+}
+
+#search{
+    font-size: 12px;
+}
+
+#header-social-media{
+    font-size: 24px;
+}
+
+#header-social-media :hover, #header-social-media :focus{
+    text-decoration: none;
+}
+
+.dropdown-menu{
+    background-color: #081f4d;
+}
+
+.dropdown-item{
+    color: #fff;
+}
+
+.dropdown-item.active,.dropdown-item:active{
+    color:#081f4d;
+    text-decoration:none;
+    background-color:#fff
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,1);
+}
+
+@media (min-width: 576px){
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+/* footer */
+#footer{
+    text-align: center;
+    background-color: #081f4d;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+/* 
+    homepage
+ */
+
+ .featured-img-left{
+     height: 210px;
+ }
+
+ @media (min-width: 992px){
+    .featured-img-left {
+        height: 415px !important;
+    }
+}

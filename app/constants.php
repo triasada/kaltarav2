@@ -1,0 +1,61 @@
+<?php
+
+const GENDER_ARRAY = [
+    'm' => 'Male',
+    'f' => 'Female'
+];
+
+const GENDER_ARRAY_INDONESIAN = [
+    'm' => 'Laki-laki',
+    'f' => 'Perempuan'
+];
+
+const CERTIFICATION_ARRAY = [
+    'SKA',
+    'SKT',
+];
+
+define('CONTENT_STATUS_DRAFT', 1);
+define('CONTENT_STATUS_SCHEDULED', 2);
+define('CONTENT_STATUS_PUBLISHED', 3);
+define('CONTENT_STATUS_DELETED', 4);
+
+define('CONTENT_TYPE_POST', 1);
+define('CONTENT_TYPE_GALLERY', 2);
+define('CONTENT_TYPE_PHOTO', 3);
+
+define('POST_CATEGORY_NEWS', 1);
+define('POST_CATEGORY_ANNOUNCEMENT', 2);
+
+define('PAGE_VISI_MISI', 1);
+define('PAGE_STRUKTUR_ORGANISASI', 2);
+define('PAGE_TUPOKSI', 3);
+define('PAGE_RENSTRA', 4);
+define('PAGE_TPJK', 5);
+define('PAGE_PERATURAN', 6);
+define('PAGE_NSPK', 7);
+define('PAGE_HSPK', 8);
+define('PAGE_KPDBU', 9);
+define('PAGE_TERTIP_USAHA_DAN_PERIZINAN', 10);
+define('PAGE_TERTIP_PENYELENGGARAAN', 11);
+define('PAGE_TERTIP_PEMANFAATAN_JASA', 12);
+define('PAGE_ALOKASI_ANGGARAN', 13);
+define('PAGE_TPJK2', 14);
+define('PAGE_FJK', 15);
+
+define('ASSOCIATION_TYPE_BUSINESS_ENTITY', 1);
+define('ASSOCIATION_TYPE_PROFESSION', 2);
+
+define('JOB_TENAGA_AHLI_KONSTRUKSI', 2);
+define('JOB_TENAGA_TERAMPIL_KONSTRUKSI', 3);
+
+define('WEB_SETTING_TWITTER', 1);
+define('WEB_SETTING_FACEBOOK', 2);
+define('WEB_SETTING_YOUTUBE', 3);
+define('WEB_SETTING_INSTAGRAM', 4);
+
+define('INVENTORY_CATEGORY_ALAT_BERAT', 1);
+define('INVENTORY_CATEGORY_BAHAN_MATERIAL', 2);
+
+define('CLASSIFICATION_TYPE_SKA', 1);
+define('CLASSIFICATION_TYPE_SKT', 2);

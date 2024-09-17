@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="jasakonstruksi.kaltaraprov.go.id" id="92fa579a-f8fa-4020-9012-5fadeba2703a" port="45022" nameFormat="DESCRIPTIVE" username="jasakon7" useOpenSSHConfig="false" />
+    </configs>
+  </component>
+</project>
