@@ -215,6 +215,27 @@
       ),
       13 => 
       array (
+        'text' => 'Harga Satuan',
+        'can' => 'View Harga ',
+        'icon' => 'fas fa-fw fa-clipboard',
+        'submenu' => 
+        array (
+          0 => 
+          array (
+            'text' => 'Harga Satuan Dasar',
+            'can' => 'View Harga Satuan Dasar',
+            'route' => 'harga_satuan.index',
+          ),
+          1 => 
+          array (
+            'text' => 'List Perguruan Tinggi',
+            'can' => 'View School',
+            'route' => 'school.index',
+          ),
+        ),
+      ),
+      14 => 
+      array (
         'text' => 'Inventori',
         'icon' => 'fas fa-fw fa-boxes',
         'can' => 'View Inventory',
@@ -234,52 +255,52 @@
           ),
         ),
       ),
-      14 => 
+      15 => 
       array (
         'text' => 'Video',
         'icon' => 'fas fa-fw fa-video',
         'route' => 'video.index',
         'can' => 'View Video',
       ),
-      15 => 
+      16 => 
       array (
         'text' => 'Link Terkait',
         'icon' => 'fas fa-link',
         'route' => 'link-url.index',
         'can' => 'View Link Url',
       ),
-      16 => 
+      17 => 
       array (
         'text' => 'user',
         'icon' => 'fas fa-fw fa-user',
         'route' => 'user.index',
         'can' => 'View User',
       ),
-      17 => 
+      18 => 
       array (
         'text' => 'role',
         'icon' => 'fas fa-fw fa-network-wired',
         'route' => 'role.index',
         'can' => 'View Role',
       ),
-      18 => 
+      19 => 
       array (
         'text' => 'Web Setting',
         'icon' => 'fas fa-cog',
         'route' => 'web-setting.edit',
         'can' => 'edit web-setting',
       ),
-      19 => 
+      20 => 
       array (
         'header' => 'account_settings',
       ),
-      20 => 
+      21 => 
       array (
         'text' => 'Profil',
         'route' => 'profile.edit',
         'icon' => 'fas fa-fw fa-user',
       ),
-      21 => 
+      22 => 
       array (
         'text' => 'Ganti Password',
         'route' => 'user.password.edit',
@@ -440,16 +461,16 @@
   ),
   'app' => 
   array (
-    'name' => 'Laravel',
+    'name' => 'simjakida',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost',
+    'url' => 'http://simjakida.local',
     'asset_url' => NULL,
     'timezone' => 'UTC',
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:aRjVdYlUejGeZz+Ebi52Q9sxnNfRJy07hsgSLMoOPnM=',
+    'key' => 'base64:F62X0qx5p9OhayFdaqHFJY+K6yRwDZM9+PHkssYNWws=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -622,7 +643,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => '/Users/satriaptbtb/Sites/kaltara/storage/framework/cache/data',
+        'path' => 'C:\\xampp\\htdocs\\kaltarav2\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -661,7 +682,7 @@
         'endpoint' => NULL,
       ),
     ),
-    'prefix' => 'laravel_cache',
+    'prefix' => 'simjakida_cache',
   ),
   'cors' => 
   array (
@@ -711,7 +732,7 @@
         'port' => '3306',
         'database' => 'jasakon7_db2019',
         'username' => 'root',
-        'password' => 'Satria7584##',
+        'password' => '',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -731,7 +752,7 @@
         'port' => '3306',
         'database' => 'jasakon7_db2019',
         'username' => 'root',
-        'password' => 'Satria7584##',
+        'password' => '',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -746,7 +767,7 @@
         'port' => '3306',
         'database' => 'jasakon7_db2019',
         'username' => 'root',
-        'password' => 'Satria7584##',
+        'password' => '',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -759,7 +780,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'laravel_database_',
+        'prefix' => 'simjakida_database_',
       ),
       'default' => 
       array (
@@ -879,7 +900,7 @@
     ),
     'temporary_files' => 
     array (
-      'local_path' => '/Users/satriaptbtb/Sites/kaltara/storage/framework/cache/laravel-excel',
+      'local_path' => 'C:\\xampp\\htdocs\\kaltarav2\\storage\\framework/cache/laravel-excel',
       'remote_disk' => NULL,
       'remote_prefix' => NULL,
       'force_resync_remote' => NULL,
@@ -894,13 +915,13 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => '/Users/satriaptbtb/Sites/kaltara/storage/app',
+        'root' => 'C:\\xampp\\htdocs\\kaltarav2\\storage\\app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => '/Users/satriaptbtb/Sites/kaltara/storage/app/public',
-        'url' => 'http://localhost/storage',
+        'root' => 'C:\\xampp\\htdocs\\kaltarav2\\storage\\app/public',
+        'url' => 'http://simjakida.local/storage',
         'visibility' => 'public',
       ),
       's3' => 
@@ -916,14 +937,14 @@
       'upload' => 
       array (
         'driver' => 'local',
-        'root' => '/Users/satriaptbtb/Sites/kaltara/public/upload',
-        'url' => 'http://localhost/upload',
+        'root' => 'C:\\xampp\\htdocs\\kaltarav2\\public\\upload',
+        'url' => 'http://simjakida.local/upload',
         'visibility' => 'public',
       ),
     ),
     'links' => 
     array (
-      '/Users/satriaptbtb/Sites/kaltara/public/storage' => '/Users/satriaptbtb/Sites/kaltara/storage/app/public',
+      'C:\\xampp\\htdocs\\kaltarav2\\public\\storage' => 'C:\\xampp\\htdocs\\kaltarav2\\storage\\app/public',
     ),
   ),
   'hashing' => 
@@ -957,13 +978,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => '/Users/satriaptbtb/Sites/kaltara/storage/logs/laravel.log',
+        'path' => 'C:\\xampp\\htdocs\\kaltarav2\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => '/Users/satriaptbtb/Sites/kaltara/storage/logs/laravel.log',
+        'path' => 'C:\\xampp\\htdocs\\kaltarav2\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -1013,7 +1034,7 @@
       ),
       'emergency' => 
       array (
-        'path' => '/Users/satriaptbtb/Sites/kaltara/storage/logs/laravel.log',
+        'path' => 'C:\\xampp\\htdocs\\kaltarav2\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -1063,14 +1084,14 @@
     'from' => 
     array (
       'address' => NULL,
-      'name' => 'Laravel',
+      'name' => 'simjakida',
     ),
     'markdown' => 
     array (
       'theme' => 'default',
       'paths' => 
       array (
-        0 => '/Users/satriaptbtb/Sites/kaltara/resources/views/vendor/mail',
+        0 => 'C:\\xampp\\htdocs\\kaltarav2\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -1201,7 +1222,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => '/Users/satriaptbtb/Sites/kaltara/storage/framework/sessions',
+    'files' => 'C:\\xampp\\htdocs\\kaltarav2\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -1210,7 +1231,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'laravel_session',
+    'cookie' => 'simjakida_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
@@ -1221,9 +1242,9 @@
   array (
     'paths' => 
     array (
-      0 => '/Users/satriaptbtb/Sites/kaltara/resources/views',
+      0 => 'C:\\xampp\\htdocs\\kaltarav2\\resources\\views',
     ),
-    'compiled' => '/Users/satriaptbtb/Sites/kaltara/storage/framework/views',
+    'compiled' => 'C:\\xampp\\htdocs\\kaltarav2\\storage\\framework\\views',
   ),
   'flare' => 
   array (

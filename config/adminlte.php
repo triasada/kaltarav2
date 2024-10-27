@@ -336,6 +336,23 @@ return [
             'can' => 'View Job Seeker'
         ],
         [
+            'text'    => 'Harga Satuan',
+            'can'   => 'View Harga ',
+            'icon'    => 'fas fa-fw fa-clipboard',
+            'submenu' => [
+                [
+                    'text'    => 'Harga Satuan Dasar',
+                    'can'   => 'View Harga Satuan Dasar',
+                    'route'     => 'harga_satuan.index',
+                ],
+                [
+                    'text'    => 'List Perguruan Tinggi',
+                    'can'   => 'View School',
+                    'route'     => 'school.index',
+                ],
+            ],
+        ],
+        [
             'text'    => 'Inventori',
             'icon'    => 'fas fa-fw fa-boxes',
             // 'route'     => 'inventory.index',

@@ -31,11 +31,11 @@
     27 => 'Laravel\\Telescope\\TelescopeServiceProvider',
     28 => 'Laravel\\Tinker\\TinkerServiceProvider',
     29 => 'Laravel\\Ui\\UiServiceProvider',
-    30 => 'Collective\\Html\\HtmlServiceProvider',
-    31 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
-    32 => 'MaddHatter\\ViewGenerator\\ServiceProvider',
-    33 => 'Carbon\\Laravel\\ServiceProvider',
-    34 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    30 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
+    31 => 'MaddHatter\\ViewGenerator\\ServiceProvider',
+    32 => 'Carbon\\Laravel\\ServiceProvider',
+    33 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    34 => 'Spatie\\Html\\HtmlServiceProvider',
     35 => 'Spatie\\Permission\\PermissionServiceProvider',
     36 => 'Spatie\\Permission\\PermissionServiceProvider',
     37 => 'Intervention\\Image\\ImageServiceProvider',
@@ -70,16 +70,17 @@
     18 => 'MaddHatter\\ViewGenerator\\ServiceProvider',
     19 => 'Carbon\\Laravel\\ServiceProvider',
     20 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    21 => 'Spatie\\Permission\\PermissionServiceProvider',
+    21 => 'Spatie\\Html\\HtmlServiceProvider',
     22 => 'Spatie\\Permission\\PermissionServiceProvider',
-    23 => 'Intervention\\Image\\ImageServiceProvider',
-    24 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
-    25 => 'App\\Providers\\AppServiceProvider',
-    26 => 'App\\Providers\\AuthServiceProvider',
-    27 => 'App\\Providers\\EventServiceProvider',
-    28 => 'App\\Providers\\RouteServiceProvider',
-    29 => 'App\\Providers\\TelescopeServiceProvider',
-    30 => 'App\\Providers\\NavigationServiceProvider',
+    23 => 'Spatie\\Permission\\PermissionServiceProvider',
+    24 => 'Intervention\\Image\\ImageServiceProvider',
+    25 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
+    26 => 'App\\Providers\\AppServiceProvider',
+    27 => 'App\\Providers\\AuthServiceProvider',
+    28 => 'App\\Providers\\EventServiceProvider',
+    29 => 'App\\Providers\\RouteServiceProvider',
+    30 => 'App\\Providers\\TelescopeServiceProvider',
+    31 => 'App\\Providers\\NavigationServiceProvider',
   ),
   'deferred' => 
   array (
@@ -189,10 +190,6 @@
     'validator' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
-    'html' => 'Collective\\Html\\HtmlServiceProvider',
-    'form' => 'Collective\\Html\\HtmlServiceProvider',
-    'Collective\\Html\\HtmlBuilder' => 'Collective\\Html\\HtmlServiceProvider',
-    'Collective\\Html\\FormBuilder' => 'Collective\\Html\\HtmlServiceProvider',
   ),
   'when' => 
   array (
@@ -233,9 +230,6 @@
     array (
     ),
     'Laravel\\Tinker\\TinkerServiceProvider' => 
-    array (
-    ),
-    'Collective\\Html\\HtmlServiceProvider' => 
     array (
     ),
   ),

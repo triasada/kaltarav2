@@ -107,4 +107,9 @@ Route::group(['middleware' => ['XSS']], function () {
     Route::resource('job-seeker', 'Backend\JobSeekerController')->middleware('auth');
     Route::resource('school-major', 'Backend\SchoolMajorController')->middleware('auth');
     Route::resource('video', 'Backend\VideoController')->middleware('auth');
+
+    //hargasatuan addon
+    Route::resource('harga_satuan', 'Backend\HargaSatuanController')->middleware('auth');
+    Route::get('/get-kecamatan/{kabupaten_id}','Backend\HargaSatuanController@getKecamatan')->middleware('auth');
+
 });
