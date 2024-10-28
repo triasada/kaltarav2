@@ -16,3 +16,7 @@ storage/logs/laravel.log
 bootstrap/cache/packages.php
 bootstrap/cache/packages.php
 bootstrap/cache/services.php
+bootstrap/cache/packages.php
+bootstrap/cache/services.php
+composer.lock
+public/upload/gallery/51/photo/671f51f1dd3bb.jpg
