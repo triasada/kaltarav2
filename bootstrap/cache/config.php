@@ -228,9 +228,9 @@
           ),
           1 => 
           array (
-            'text' => 'List Perguruan Tinggi',
-            'can' => 'View School',
-            'route' => 'school.index',
+            'text' => 'Harga Satuan Pekerjaan',
+            'can' => 'View Harga Satuan pekerjaan',
+            'route' => 'pekerjaan.index',
           ),
         ),
       ),

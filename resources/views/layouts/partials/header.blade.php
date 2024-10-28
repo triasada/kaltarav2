@@ -76,6 +76,7 @@
                             <a class="dropdown-item" href="{{ route('proyek') }}">Proyek Pekerjaan (APBN, APBD, Pendanaan Lain)</a>
                             <a class="dropdown-item" href="{{ route('perguruan-tinggi') }}">Perguruan Tinggi</a>
                             <a class="dropdown-item" href="{{ route('pencari-kerja-konstruksi') }}">Pencari Kerja Konstruksi</a>
+                            <a class="dropdown-item" href="{{ route('harga_satuan.index_public') }}">Harga Satuan</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">

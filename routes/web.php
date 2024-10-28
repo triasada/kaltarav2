@@ -111,5 +111,8 @@ Route::group(['middleware' => ['XSS']], function () {
     //hargasatuan addon
     Route::resource('harga_satuan', 'Backend\HargaSatuanController')->middleware('auth');
     Route::get('/get-kecamatan/{kabupaten_id}','Backend\HargaSatuanController@getKecamatan')->middleware('auth');
+    Route::get('/harga-satuan', 'Frontend\HargaSatuanController@index')->name('harga_satuan.index_public');
+    Route::resource('pekerjaan', 'Backend\HargaSatuanPekerjaanController')->middleware('auth');
+
 
 });
