@@ -61,7 +61,7 @@
                             <a class="dropdown-item" href="{{ route('page.read', [PAGE_NSPK]) }}">NSPK</a>
                             <a class="dropdown-item" href="{{ route('page.read', [PAGE_HSPK]) }}">HSPK</a>
                             <a class="dropdown-item" href="{{ route('page.read', [PAGE_KPDBU]) }}">KPDBU</a>
-{{--                            <a class="dropdown-item" href="{{ route('photo-gallery.index') }}">Galeri Infografis</a>--}}
+                            <a class="dropdown-item" href="{{ route('photo-gallery.index') }}">Galeri</a>
                             <a class="dropdown-item" href="{{ route('gallery-video') }}">Galeri Video</a>
                         </div>
                     </li>
