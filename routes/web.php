@@ -113,7 +113,8 @@ Route::group(['middleware' => ['XSS']], function () {
     Route::get('/get-kecamatan/{kabupaten_id}','Backend\HargaSatuanController@getKecamatan')->middleware('auth');
     Route::get('/harga-satuan', 'Frontend\HargaSatuanController@index')->name('harga_satuan.index_public');
     Route::resource('pekerjaan', 'Backend\HargaSatuanPekerjaanController')->middleware('auth');
-    Route::resource('pekerjaan_public', 'Frontend\HargaSatuanPekerjaanController');
+    Route::get('/pekerjaan_public', 'Frontend\HargaSatuanPekerjaanController@index')->name('pekerjaan_public.index');
+    Route::get('/pekerjaan_public/{id}', 'Frontend\HargaSatuanPekerjaanController@show')->name('pekerjaan_public.show');
 
 
 });
