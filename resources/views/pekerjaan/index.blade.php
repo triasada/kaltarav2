@@ -13,6 +13,7 @@
                 <th>Title</th>
                 <th>Satuan</th>
                 <th>Biaya</th>
+                <th>Kabupaten (District)</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -23,6 +24,7 @@
                     <td>{{ $pekerjaan->title }}</td>
                     <td>{{ $pekerjaan->satuan }}</td>
                     <td>{{ number_format($pekerjaan->biaya, 2) }}</td>
+                    <td>{{ $pekerjaan->district->name }}</td>
                     <td>
                         <a href="{{ route('pekerjaan.edit', $pekerjaan->id) }}" class="btn btn-warning">Edit</a>
                         <a href="{{ route('pekerjaan.show', $pekerjaan->id) }}" class="btn btn-info">Detail</a>

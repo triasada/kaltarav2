@@ -16,6 +16,18 @@
             <label for="satuan">Satuan</label>
             <input type="text" name="satuan" class="form-control" value="{{ $pekerjaan->satuan }}" required>
         </div>
+        <div class="form-group">
+            <label for="kabupaten_id">Kabupaten (District)</label>
+            <select name="kabupaten_id" class="form-control" required>
+                <option value="">Select District</option>
+                @foreach($districts as $district)
+                    <option value="{{ $district->id }}" 
+                        {{ $pekerjaan->kabupaten_id == $district->id ? 'selected' : '' }}>
+                        {{ $district->name }}
+                    </option>
+                @endforeach
+            </select>
+        </div>
 
         <h4>Details</h4>
 

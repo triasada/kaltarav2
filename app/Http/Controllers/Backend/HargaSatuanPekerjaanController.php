@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\HargaSatuan;
+use App\District;
 use App\HargaSatuanPekerjaan;
 use App\HargaSatuanPekerjaanDetail;
 use Illuminate\Http\Request;
@@ -12,22 +13,30 @@ class HargaSatuanPekerjaanController extends Controller
 {
     public function index()
     {
-        $pekerjaans = HargaSatuanPekerjaan::with('details.hargaSatuan')->get();
+        $pekerjaans = HargaSatuanPekerjaan::with(['details.hargaSatuan','district'])->get();
         return view('pekerjaan.index', compact('pekerjaans'));
     }
 
     public function create()
 {
+    $districts = District::all(); // Fetch all districts
+
     $upahList = HargaSatuan::where('jenis', 'UPAH')->get();
     $bahanList = HargaSatuan::where('jenis', 'BAHAN')->get();
     $alatList = HargaSatuan::where('jenis', 'ALAT')->get();
 
-    return view('pekerjaan.create', compact('upahList', 'bahanList', 'alatList'));
+    return view('pekerjaan.create', compact('upahList', 'bahanList', 'alatList','districts'));
 }
 
 public function store(Request $request)
 {
-    $pekerjaan = HargaSatuanPekerjaan::create($request->only('title', 'satuan'));
+    $validated = $request->validate([
+        'title' => 'required|string|max:255',
+        'satuan' => 'required|string|max:50',
+        'kabupaten_id' => 'required|exists:district,id',
+    ]);
+
+    HargaSatuanPekerjaan::create($validated);
 
     foreach (['upah', 'bahan', 'alat'] as $jenis) {
         if (isset($request->details[$jenis])) {
@@ -58,6 +67,7 @@ public function store(Request $request)
 
 public function edit($id)
 {
+    $districts = District::all();
     // Load pekerjaan with related details and harga_satuan
     $pekerjaan = HargaSatuanPekerjaan::with('details.hargaSatuan')->findOrFail($id);
 
@@ -69,22 +79,29 @@ public function edit($id)
     // Debug the fetched data
     // dd($pekerjaan);
 
-    return view('pekerjaan.edit', compact('pekerjaan', 'upahList', 'bahanList', 'alatList'));
+    return view('pekerjaan.edit', compact('pekerjaan', 'upahList', 'bahanList', 'alatList','districts'));
 }
 
 
 public function update(Request $request, $id)
 {
-    $pekerjaan = HargaSatuanPekerjaan::findOrFail($id);
+    $validated = $request->validate([
+        'title' => 'required|string|max:255',
+        'satuan' => 'required|string|max:50',
+        'kabupaten_id' => 'required|exists:district,id',
+    ]);
+    // dd($request->removed_details);
 
-    // Update pekerjaan's main data
-    $pekerjaan->update($request->only('title', 'satuan'));
+    $pekerjaan = HargaSatuanPekerjaan::findOrFail($id);
+    // dd($pekerjaan->id);
+    $pekerjaan->update($validated);
 
     // Handle the removed details if any
-    if ($request->has('removed_details')) {
-        $removedDetails = json_decode($request->removed_details, true);
-        HargaSatuanPekerjaanDetail::whereIn('id', $removedDetails)->delete();
-    }
+    
+        
+        HargaSatuanPekerjaanDetail::where('pekerjaan_id', $pekerjaan->id)->delete();
+    
+
 
     // Loop through each jenis (upah, bahan, alat) to save/update details
     foreach (['upah', 'bahan', 'alat'] as $jenis) {

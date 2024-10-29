@@ -12,4 +12,10 @@ class District extends Model
      * @var string
      */
     protected $table = 'district';
+    protected $fillable = ['name'];
+
+    public function pekerjaans()
+    {
+        return $this->hasMany(HargaSatuanPekerjaan::class, 'kabupaten_id');
+    }
 }
