@@ -49,7 +49,6 @@
                             <a class="dropdown-item" href="{{ route('page.read', [PAGE_STRUKTUR_ORGANISASI]) }}">Struktur Organisasi</a>
                             <a class="dropdown-item" href="{{ route('page.read', [PAGE_VISI_MISI]) }}">Visi & Misi</a>
                             <a class="dropdown-item" href="{{ route('page.read', [PAGE_TUPOKSI]) }}">Tupoksi</a>
-                            <a class="dropdown-item" href="{{ route('page.read', [PAGE_RENSTRA]) }}">Renstra</a>
                             <a class="dropdown-item" href="{{ route('page.read', [PAGE_TPJK]) }}">TPJK</a>
                         </div>
                     </li>
@@ -58,9 +57,6 @@
                         <div class="dropdown-menu" aria-labelledby="dropdownInformasi">
                             <a class="dropdown-item" href="{{ route('news') }}">Berita Terbaru</a>
                             <a class="dropdown-item" href="{{ route('page.read', [PAGE_PERATURAN]) }}">Peraturan</a>
-                            <a class="dropdown-item" href="{{ route('page.read', [PAGE_NSPK]) }}">NSPK</a>
-                            <a class="dropdown-item" href="{{ route('page.read', [PAGE_HSPK]) }}">HSPK</a>
-                            <a class="dropdown-item" href="{{ route('page.read', [PAGE_KPDBU]) }}">KPDBU</a>
                             <a class="dropdown-item" href="{{ route('photo-gallery.index') }}">Galeri</a>
                             <a class="dropdown-item" href="{{ route('gallery-video') }}">Galeri Video</a>
                         </div>
