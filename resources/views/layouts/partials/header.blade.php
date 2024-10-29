@@ -77,7 +77,6 @@
                             <a class="dropdown-item" href="{{ route('perguruan-tinggi') }}">Perguruan Tinggi</a>
                             <a class="dropdown-item" href="{{ route('pencari-kerja-konstruksi') }}">Pencari Kerja Konstruksi</a>
                             <a class="dropdown-item" href="{{ route('harga_satuan.index_public') }}">Harga Satuan</a>
-                            <!-- <a class="dropdown-item" href="{{ route('pekerjaan_public.index') }}">Harga Satuan Pekerjaan</a> -->
                         </div>
                     </li>
                     <li class="nav-item dropdown">
