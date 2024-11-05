@@ -29,7 +29,7 @@ class HargaSatuanController extends Controller
             'nama' => 'required|string|max:200',
             'jenis' => 'required|string|max:100',
             'satuan' => 'required|string|max:5',
-            'kabupaten_id' => 'required|exists:districts,id',
+            'kabupaten_id' => 'required|exists:district,id',
             'kecamatan_id' => 'required|exists:kecamatans,id',
             'harga' => 'required|numeric',
         ]);
@@ -54,7 +54,7 @@ class HargaSatuanController extends Controller
             'nama' => 'required|string|max:200',
             'jenis' => 'required|string|max:100',
             'satuan' => 'required|string|max:5',
-            'kabupaten_id' => 'required|exists:districts,id',
+            'kabupaten_id' => 'required|exists:district,id',
             'kecamatan_id' => 'required|exists:kecamatans,id',
             'harga' => 'required|numeric',
         ]);
