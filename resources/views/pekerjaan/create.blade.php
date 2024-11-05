@@ -91,7 +91,7 @@
                     </select>
                 </td>
                 <td><input type="text" name="details[${type}][${index}][harga]" class="form-control harga" readonly></td>
-                <td><input type="number" name="details[${type}][${index}][koefisien]" class="form-control" placeholder="Koefisien" oninput="calculateTotal(this)" required></td>
+                <td><input type="number" step=".01" name="details[${type}][${index}][koefisien]" class="form-control" placeholder="Koefisien" oninput="calculateTotal(this)" required></td>
                 <td><input type="text" name="details[${type}][${index}][total_harga]" class="form-control total_harga" readonly></td>
                 <td><button type="button" class="btn btn-danger remove-button">Remove</button></td>
             </tr>
